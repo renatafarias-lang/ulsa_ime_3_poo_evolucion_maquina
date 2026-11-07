@@ -1,0 +1,16 @@
+#ifndef CORTADORA_H
+#define CORTADORA_H
+
+#include "Maquina.h"
+
+class Cortadora : public Maquina {
+private:
+    void ejecutarCiclo() override;
+
+public:
+    explicit Cortadora(const std::string& nombre);
+
+    int tiempoCicloSeg() const override;
+};
+
+#endif
